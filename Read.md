@@ -25,3 +25,6 @@ npm install --save-dev nodemon
 
 // Middleware to parse JSON bodies
 app.use(express.json());
+
+### Add this to package.json
+  "type": "module", 
