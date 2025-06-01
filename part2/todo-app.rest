@@ -18,6 +18,33 @@ Content-Type: application/json
 
 {
     "username": "sachit@gmail.com",
-    "password": "12312344"    
+    "password": "123123"    
 }
 
+
+### Fetch all todos GET /todos 
+GET http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4Nzc0MDEyLCJleHAiOjE3NDg4NjA0MTJ9.jiJ5IDu1tbkZh6YLXnu4Su7Ug-gbxsnant05_nVA8-k
+
+### Create new todos POST /todos
+POST http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4Nzc0MDEyLCJleHAiOjE3NDg4NjA0MTJ9.jiJ5IDu1tbkZh6YLXnu4Su7Ug-gbxsnant05_nVA8-k
+Content-Type: application/json
+
+{
+    "task": "Finish Coding projects"
+}
+
+### Update a todo PUT /Todos/:id
+PUT http://localhost:3000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4Nzc0MDEyLCJleHAiOjE3NDg4NjA0MTJ9.jiJ5IDu1tbkZh6YLXnu4Su7Ug-gbxsnant05_nVA8-k
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+
+### DELETE a todo PUT /Todos/:id
+DELETE http://localhost:3000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ4Nzc0MDEyLCJleHAiOjE3NDg4NjA0MTJ9.jiJ5IDu1tbkZh6YLXnu4Su7Ug-gbxsnant05_nVA8-k
